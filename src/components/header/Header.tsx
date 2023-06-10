@@ -13,7 +13,7 @@ export const Header = () => {
         <Resume />
         <HeaderSocials />
 
-        <a href="#contact" className='scroll__down'>Scroll Down</a>
+        <a href="#contact" className='scroll__down'>---{'>'}</a>
 
       </div>
     </header>
