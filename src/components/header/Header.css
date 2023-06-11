@@ -1,47 +1,62 @@
 header {
     height: 100vh;
-    padding-top: 7rem;
+    padding-top: 15rem;
+    padding-left: 2rem;
     overflow: hidden;
 }
 
 .header__container {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
     height: 100%;
     position: relative;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: -1rem;
+}
+
+.subtitle {
+    font-size: 1.3rem;
 }
 
 /* ========== RESUME ========== */
 .resume {
     margin-top: 2.5rem;
     display: flex;
-    gap: 1rem;
-    justify-content: center;
+    gap: 1rem;                             
+    justify-content: left;
 }
 
 /* ========== HEADER SOCIALS ========== */
 .header__socials {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 0.8rem;
     position: absolute;
-    left: 0;
-    bottom: 3rem;
+    top: 8.5rem;
+    font-size: 1.5rem;
 }
 
-.header__socials::after {
-    content: "";
-    width: 1px;
-    height: 2rem;
-    background-color: var(--color-primary);
-}
+/* ========== MEDIA QUERIES (SMALL DEVICES E.G. MOBILE) ========== */
+@media screen and (max-width: 1024px) {
 
-/* ========== SCROLL DOWN ========== */
-.scroll__down {
-    position: absolute;
-    bottom: 15rem;
-    transform: rotate(90deg);
-    font-weight: 300;
-    font-size: 0.9rem;
+    .header__container {
+        text-align: center;
+    }
 
+    .resume {
+        justify-content: center;
+    }
+
+    .header__socials {
+        align-self: center;
+        position: absolute;
+        font-size: 2rem;
+        gap: 2rem;
+    }
 }

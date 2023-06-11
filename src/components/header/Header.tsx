@@ -7,13 +7,10 @@ export const Header = () => {
   return (
     <header>
       <div className="container header__container">
-        <h5>Hello I'm</h5>
-        <h1>Juan Lucas</h1>
-        <h5 className="text-light">Computer Science @ UC Berkeley</h5>
+        <div className='title'>👋🏽 Kamusta!</div>
+        <div className='subtitle'>I'm Juan Lucas!</div>
         <Resume />
         <HeaderSocials />
-
-        <a href="#contact" className='scroll__down'>---{'>'}</a>
 
       </div>
     </header>
